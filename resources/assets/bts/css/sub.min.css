@@ -1,0 +1,136 @@
+.pagination__list {
+    margin-left: 0px !important; 
+}
+.icon-cabinet {
+  width: 1.5em;
+  height: 1.5em;
+  fill: #727272;
+}
+.hero--main .hero__content {
+    max-width: 400px;
+    max-height: 400px;
+    overflow: hidden;
+}
+.hero{
+    
+    overflow: hidden;
+    
+}
+.heron{
+    
+    overflow: visible;
+    
+}
+
+b{
+    font-weight: bold;
+}
+.arrowpos{
+    margin-top: 12px;
+}
+
+@media only screen and (max-width: 767px) {
+    /* For mobile phones: */
+    .arrowpos {
+       margin-top: 10px;
+    }
+    
+  .article__text img, .article__text p img  .article p img {width:100% !important; height:auto !important;}
+}
+
+.article__text img, .article__text p img {width:100% !important; height:auto !important;}
+iframe {
+    
+    width: 100% !important;
+   
+    min-height: 700px !important;
+}
+
+@media only screen and (max-width: 767px) {
+    /* For mobile phones: */
+    iframe {
+       min-height: 400px !important;
+    }
+}
+
+.error, #errorResult, .product__form__error, .notification_error{
+    color: red;
+}
+
+.thumb__box {
+  position: relative;
+  z-index: 0;
+  background: #fff;
+  min-height: 100%;
+  border-radius: 5px;
+  line-height: 1.2;
+  transition: max-height .3s ease-out, z-index .3s ease-out;
+  max-height: 100%;
+  overflow: hidden;
+    float:left;
+}
+
+.buffer{
+    
+    margin-top:40px;
+}
+
+/* Loader */
+.loader,
+.loader:before,
+.loader:after {
+  border-radius: 50%;
+  width: 1em;
+  height: 1em;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation: load7 1.8s infinite ease-in-out;
+  animation: load7 1.8s infinite ease-in-out;
+}
+.loader {
+  color: #0C5FA2;
+  font-size: 6px;
+  position: relative;
+  text-indent: -9999em;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+.loader:before,
+.loader:after {
+  content: '';
+  position: absolute;
+  top: 0;
+}
+.loader:before {
+  left: -3.5em;
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+.loader:after {
+  left: 3.5em;
+}
+@-webkit-keyframes load7 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 2.5em 0 -1.3em;
+  }
+  40% {
+    box-shadow: 0 2.5em 0 0;
+  }
+}
+@keyframes load7 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 2.5em 0 -1.3em;
+  }
+  40% {
+    box-shadow: 0 2.5em 0 0;
+  }
+}
+
+strong {font-weight: bold;}

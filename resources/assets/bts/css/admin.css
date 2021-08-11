@@ -1,0 +1,20 @@
+.imprev{width:122px; height:91px; border:1px solid grey;}
+#sl1Prev, #sl2Prev, #sl3Prev {width:100%; min-height:97px; height:auto; border:1px solid grey;}
+
+#sl1Prev div, #sl2Prev div, #sl3Prev div {width:122px; height:91px; margin:3px; position:relative; display:inline-block;}
+
+.delsl {position:absolute  !important;
+top:0px; right:0px;
+background:white;
+border-radius:2px;
+width:12px !important;
+height:10px !important;
+padding:0px;
+line-height:9px;
+text-align:center;
+cursor:pointer;
+}
+
+
+.divider{clear:both; height:10px;}
+.fieldname{font-weight:bold;}

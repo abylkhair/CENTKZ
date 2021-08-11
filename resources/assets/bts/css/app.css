@@ -1,0 +1,311 @@
+html body{margin-bottom: 110px;}
+.listrow{padding: 3px 5px; border-radius: 5px;}
+.listrow:nth-child(even){background-color:#f1eaea; }
+.ischat{color:black !important;}
+.errortext{color: red; font-weight: bold;}
+
+.btn{color: black !important;}
+#forbva.btn-success {background-color: green !important;}
+ #forbvozd.btn-success {background-color:#ceb0b0  !important;}
+  #forbprotiv.btn-success {background-color:#d80404  !important;}
+.zacol{color:green;}
+.protivcol{color:#d80404;}
+.vozdcol{color:#ceb0b0;}
+.switchlab{font-weight: bold;
+margin-bottom: 20px;
+}
+.qw{padding-left: 15px;}
+.qws{padding-left: 5px;}
+@media (max-width: 768px) {.qws{padding-left: 0px;}}
+
+
+.needv{font-weight: bold;}
+.closed, .closed a,  .closed div  a{color:#ceb0b0 !important;}
+#filtr{display: none;}
+.switch input {
+   
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+    z-index: 100;
+   
+    opacity: 0;
+  
+    cursor: pointer;
+}
+
+.switch {
+    width: 180px;
+    height: 50px;
+    position: relative;
+    margin-bottom: 30px;
+    margin-left: 20px;
+
+}
+.switch label {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: #a5a39d;
+    border-radius: 40px;
+    box-shadow:
+        inset 0 3px 8px 1px rgba(0,0,0,0.2),
+        0 1px 0 rgba(255,255,255,0.5);
+}
+
+.switch label:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -18px; right: -18px; bottom: -18px; left: -18px;
+    border-radius: inherit;
+    background: #eee; /* Fallback */
+    background: linear-gradient(#e5e7e6, #eee);
+    box-shadow: 0 1px 0 rgba(255,255,255,0.5);
+    -webkit-filter: blur(1px); /* Smooth trick */
+    filter: blur(1px); /* Future-proof */
+}
+
+
+.switch label i {
+    display: block;
+    height: 100%;
+    width: 60%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    border-radius: inherit;
+    background: #b2ac9e; /* Fallback */
+    background: linear-gradient(#f7f2f6, #b2ac9e);
+    box-shadow:
+        inset 0 1px 0 white,
+        0 0 8px rgba(0,0,0,0.3),
+        0 5px 5px rgba(0,0,0,0.2);
+}
+
+.switch label i:after {
+    content: "";
+    position: absolute;
+    left: 15%;
+    top: 25%;
+    width: 70%;
+    height: 50%;
+    background: #d2cbc3; /* Fallback */
+    background: linear-gradient(#cbc7bc, #d2cbc3);
+    border-radius: inherit;
+}
+
+
+.switch label i:before {
+    content: "Нет";
+    position: absolute;
+    top: 42%;
+    right: -50%;
+    margin-top: -12px;
+    color: #666; /* Fallback */
+    color: rgba(0,0,0,0.4);
+    font-style: normal;
+    font-weight: bold;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-shadow: 0 1px 0 #bcb8ae, 0 -1px 0 #97958e;
+}
+
+
+.switch input:checked ~ label { /* Background */
+    background: #9abb82;
+}
+
+.switch input:checked ~ label i { /* Toggle */
+    left: auto;
+    right: -1%;
+}
+
+.switch input:checked ~ label i:before { /* On/off */
+    content: "Да";
+    right: 115%;
+    color: #82a06a;
+    text-shadow: 0 1px 0 #afcb9b, 0 -1px 0 #6b8659;
+}
+
+#chat{max-height: 300px;
+	margin-top: 15px;
+overflow-y: scroll;
+}
+.chatrow{padding-bottom: 5px;
+font-size: 12px;}
+
+.forfile{float: left; padding: 3px;}
+
+#userslistouter{height:255px;
+
+overflow-y:auto;
+overflow-x:hidden;
+position:relative;
+}
+
+#fountainG, #fountainG2{
+
+ visibility:hidden;
+}
+
+.overlay-loader {
+	display: block;
+	margin: auto;
+	width: 100px;
+	height: 100px;
+	position: relative;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+.loader {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	width: 100px;
+	height: 100px;
+	animation-name: rotateAnim;
+		-o-animation-name: rotateAnim;
+		-ms-animation-name: rotateAnim;
+		-webkit-animation-name: rotateAnim;
+		-moz-animation-name: rotateAnim;
+	animation-duration: 0.35s;
+		-o-animation-duration: 0.35s;
+		-ms-animation-duration: 0.35s;
+		-webkit-animation-duration: 0.35s;
+		-moz-animation-duration: 0.35s;
+	animation-iteration-count: infinite;
+		-o-animation-iteration-count: infinite;
+		-ms-animation-iteration-count: infinite;
+		-webkit-animation-iteration-count: infinite;
+		-moz-animation-iteration-count: infinite;
+	animation-timing-function: linear;
+		-o-animation-timing-function: linear;
+		-ms-animation-timing-function: linear;
+		-webkit-animation-timing-function: linear;
+		-moz-animation-timing-function: linear;
+}
+.loader div {
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	border: 1px solid #000;
+	position: absolute;
+	top: 2px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+.loader div:nth-child(odd) {
+	border-top: none;
+	border-left: none;
+}
+.loader div:nth-child(even) {
+	border-bottom: none;
+	border-right: none;
+}
+.loader div:nth-child(2) {
+	border-width: 2px;
+	left: 0px;
+	top: -4px;
+	width: 12px;
+	height: 12px;
+}
+.loader div:nth-child(3) {
+	border-width: 2px;
+	left: -1px;
+	top: 3px;
+	width: 18px;
+	height: 18px;
+}
+.loader div:nth-child(4) {
+	border-width: 3px;
+	left: -1px;
+	top: -4px;
+	width: 24px;
+	height: 24px;
+}
+.loader div:nth-child(5) {
+	border-width: 3px;
+	left: -1px;
+	top: 4px;
+	width: 32px;
+	height: 32px;
+}
+.loader div:nth-child(6) {
+	border-width: 4px;
+	left: 0px;
+	top: -4px;
+	width: 40px;
+	height: 40px;
+}
+.loader div:nth-child(7) {
+	border-width: 4px;
+	left: 0px;
+	top: 6px;
+	width: 50px;
+	height: 50px;
+}
+
+
+@keyframes rotateAnim {
+	from {
+		transform: rotate(360deg);
+	}
+	to {
+		transform: rotate(0deg);
+	}
+}
+
+@-o-keyframes rotateAnim {
+	from {
+		-o-transform: rotate(360deg);
+	}
+	to {
+		-o-transform: rotate(0deg);
+	}
+}
+
+@-ms-keyframes rotateAnim {
+	from {
+		-ms-transform: rotate(360deg);
+	}
+	to {
+		-ms-transform: rotate(0deg);
+	}
+}
+
+@-webkit-keyframes rotateAnim {
+	from {
+		-webkit-transform: rotate(360deg);
+	}
+	to {
+		-webkit-transform: rotate(0deg);
+	}
+}
+
+@-moz-keyframes rotateAnim {
+	from {
+		-moz-transform: rotate(360deg);
+	}
+	to {
+		-moz-transform: rotate(0deg);
+	}
+}
+
+.edonly{display:none};
+
+.orderslist thead td th{font-weight:bold;}
+.orderslist tr:nth-child(even) {background:#e8e4e4; }
+.orderslist td, .orderslist th{padding:5px;}
+ 
